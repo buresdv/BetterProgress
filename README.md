@@ -53,7 +53,7 @@ progressTacker.mainProgress.increment(byPercentage: 25)
 _Example:_
 
 ```swift
-progressTacker.mainProgress.increment(bySetNumber: incrementBy)
+progressTacker.mainProgress.increment(bySetNumber: 5)
 ```
 
 ##### Set progress to percentage of total value:

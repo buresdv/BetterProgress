@@ -10,8 +10,8 @@ import SwiftUI
 
 public enum TextTarget
 {
-    case aboveBar(String.LocalizationValue)
-    case belowBar(String.LocalizationValue)
+    case aboveBar(String)
+    case belowBar(String)
 }
 
 public extension Progress
@@ -21,9 +21,9 @@ public extension Progress
         switch textTarget
         {
         case .aboveBar(let aboveBarText):
-            self.localizedDescription = String(localized: aboveBarText)
+            self.localizedDescription = aboveBarText
         case .belowBar(let belowBarText):
-            self.localizedAdditionalDescription = String(localized: belowBarText)
+            self.localizedAdditionalDescription = belowBarText
         }
     }
 }
